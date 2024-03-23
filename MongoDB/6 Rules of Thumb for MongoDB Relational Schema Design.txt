@@ -1,0 +1,31 @@
+Important document: For One-to-many relation in DB.
+
+
+https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design
+
+
+** One: Favor embedding unless there is a compelling reason not to.
+   Main-- Embedding means One model have another models whole data indetails.
+   Range -- data < 100s : Embed.
+   Example -- User one Account can have several order location.
+
+** Two: Needing to access an object on its own is a compelling reason not to embed it.
+   Main-- Only Reference pass(_id) to the Child inside Parent.
+   Range-- data > 100s : Array objId reference.
+   Example --  One user can have many Orders and item.
+
+** Three: Arrays should not grow without bound. If there are more than a couple of hundred documents on the “many” side, don’t embed them; if there are more than a few thousand documents on the “many” side, don’t use an array of ObjectID references. High-cardinality arrays are a compelling reason not to embed.
+   Main -- Only Reference pass(_id) to the parent inside Child.
+   Range -- data < 1000s : Parent.
+   Example -- One Instagram Id can have so many post and every post can use user name.
+
+** Four: Don’t be afraid of application-level joins: If you index correctly and use the projection specifier, then application-level joins are barely more expensive than server-side joins in a relational database.  
+
+** Five: Consider the read-to-write ratio with denormalization. A field that will mostly be read and only seldom updated is a good candidate for denormalization. If you denormalize a field that is updated frequently then the extra work of finding and updating all the instances of redundant data is likely to overwhelm the savings that you get from denormalization.
+   Main-- Denormalization means every child have refernce of parent model but use only those data that will not change in the future.    
+
+
+** Six: As always with MongoDB, how you model your data depends entirely on your particular application’s data access patterns. You want to structure your data to match the ways that your application queries and updates it.
+   Main-- Instruction(Model can be build according to the project and its have full authority to Developer)
+
+
