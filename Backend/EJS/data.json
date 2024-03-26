@@ -1,0 +1,49 @@
+{
+"cats": {
+    "name": "cat",
+    "followers": 24000,
+    "following": 5,
+    "posts" : [
+        {
+            "image": "https://media.istockphoto.com/id/1397756029/photo/bengal-cat-in-glasses-works-at-the-table-on-the-computer.webp?b=1&s=170667a&w=0&k=20&c=z4nF4zXkZf9hI9ldIahGYw_fColmKNwtabi7aJk-QLw=",
+            "likes" : 250,
+            "comments" : 20
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D",
+            "likes" : 150,
+            "comments" : 10
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1586289883499-f11d28aaf52f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8fA%3D%3D",
+            "likes" : 355,
+            "comments" : 45
+        }
+    ]
+
+  },
+
+  "dogs": {
+    "name": "dog",
+    "followers": 4000,
+    "following": 123,
+    "posts" : [
+        {
+            "image": "https://media.istockphoto.com/id/157653757/photo/black-and-white-border-collie-dog-with-tongue-out.webp?b=1&s=170667a&w=0&k=20&c=YT-dPPkPufxjaEIeC-5PavL0P1zVqjSMVY0PmK7t81s=",
+            "likes" : 510,
+            "comments" : 40
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1666818944950-144c982c6972?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRvZ3MlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D",
+            "likes" : 150,
+            "comments" : 10
+        },
+        {
+            "image": "https://media.istockphoto.com/id/489272417/photo/cat-and-dog-sitting-together.webp?b=1&s=170667a&w=0&k=20&c=HIMSkGx2YjWWEDkQjSxme9NpuOJgS9y-O7Czgb_SdPw=",
+            "likes" : 355,
+            "comments" : 45
+        }
+    ]
+
+  }
+}
